@@ -1,0 +1,10 @@
+body {
+    background-image: url(assets/bgImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    /* (from where to start, first color, second color)  */
+    /* background: linear-gradient(to left, burlywood, tomato); */
+    /* background: radial-gradient(circle, burlywood, tomato); */
+}

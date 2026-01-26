@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aquamarine;
+    width: 600px;
+    height: 400px;
+    margin: 100px;
+    padding: 20px;
+    /* need to set parent to relative to spin the object in the parent container */
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+    /* position can't be changed */
+    /* z idx doesn't work with this */
+    /* position: static; */
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+
+.fixedBox {
+    background-color: tomato;
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+
+.stickybox {
+    background-color: burlywood;
+    width: 100px;
+    height: 50px;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}

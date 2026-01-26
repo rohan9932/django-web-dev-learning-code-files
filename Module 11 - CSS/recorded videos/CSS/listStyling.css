@@ -1,0 +1,14 @@
+.ordered-list {
+    list-style-type: decimal-leading-zero;
+}
+
+.unordered-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.unordered-list li {
+    background-color: burlywood;
+    margin: 5px 5px;
+    padding: 2px 4px;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 2px;
+}
+
+/* in normal paragraph standard line height is 1.5 */
+.normal-text {
+    text-align: justify;
+    margin: 100px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+
+.font-style {
+    /* generic font family  */
+    /* font-family: sans-serif; */
+    /* specific font family */
+    font-weight: 500;
+    font-size: 2rem;
+    font-style: oblique;
+    margin: 100px;
+
+    text-transform: lowercase;
+    text-decoration: underline;
+}

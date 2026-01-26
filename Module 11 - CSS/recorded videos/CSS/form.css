@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 500px;
+    background-color: burlywood;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 50px auto;
+    /* will generate through box shadow generator */
+    box-shadow: -3px 5px 49px -2px rgba(227,47,47,0.75);
+    font-family: sans-serif;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: darkslategrey;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid tomato;
+    outline: none;
+    box-shadow: -3px 5px 49px -2px rgba(227,47,47,0.75);
+}
+
+button {
+    width: 100%;
+    padding: 10px 40px;
+    color: black;
+    background-color: azure;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+::placeholder {
+    color: tomato;
+    font-style: italic;
+}
+
+/* for chrome, safari support  */
+::-webkit-input-placeholder {
+    color: tomato;
+    font-style: italic; 
+}
+
+/* for mozilla firefox support  */
+::-moz-placeholder {
+    color: tomato;
+    font-style: italic; 
+}
+
+/* for ms edge support  */
+::-ms-input-placeholder {
+    color: tomato;
+    font-style: italic; 
+}

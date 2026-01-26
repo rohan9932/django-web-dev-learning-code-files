@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz</title>
+  </head>
+  <body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <!-- id have to be unique in a html file but in a class there can be multiple tags -->
+        <section id="blogPost1">
+            <h2 id="blogheading" class="middleclass" title="This is heading...">Water is Important!!</h2>
+            <p id="details" class="middleclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quo voluptate hic omnis eos, nesciunt facere ipsa esse nulla at vel, perspiciatis illo, ea natus. Corrupti ipsum debitis omnis. Autem.</p>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- post method -> can't see details on url, get -> see details on url -->
+    <form action="" method="post">
+      <!-- for is used in label to make relation with the corresponding input -->
+      <!-- when data is sent into backend -> it's label is according the 'name' in the url -->
+      <label for="fname">First Name:</label>
+      <input id="fname" type="text" name="first_name" required/>
+
+      <br /><br />
+
+      <label for="lname">Last Name:</label>
+      <input id="lname" type="text" name="last_name" required/>
+
+      <br /><br />
+
+      <label for="country">Choose Country:</label>
+      <select name="" id="cntry" name="country">
+        <option value="bangladesh">Bangladesh</option>
+        <option value="afghanistan">Afghanistan</option>
+        <option value="pakistan">Pakistan</option>
+      </select>
+
+      <br><br>
+
+      <input type="submit" value="Send" />
+
+      <br><br>
+
+      <input type="checkbox" name="hobbies" value="gardening"> Gardening <br>
+      <input type="checkbox" name="hobbies" value="fishing"> Fishing <br>
+      <input type="checkbox" name="hobbies" value="gaming"> Gaming <br>
+      <input type="checkbox" name="hobbies" value="sports"> Sports <br>
+
+      <!-- drawing relation here with same name -->
+      Choose Gender: <br>
+      <input type="radio" name="gender" id=""> Male <br>
+      <input type="radio" name="gender" id=""> Female <br>
+      <input type="radio" name="gender" id=""> Others <br>
+
+      <input type="password" name="" id=""> 
+
+      <br> <br>
+
+      <input type="file" name="" id="">
+    </form>
+  </body>
+</html>

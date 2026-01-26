@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-size: 16px;
+    color: green;
+}
+
+/* for selectors */
+
+/* child selector */
+div > h2 {
+    color: red;
+    font-size: 50px;
+}
+
+.btn {
+    background-color: rgb(238, 33, 15);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* pseudo selector */
+.btn:hover {
+    background-color: tomato;
+}
+
+.myClass h3:first-child {
+    color: burlywood;
+    font-size: 25px;
+}
+
+.myClass h3:last-child {
+    color: tomato; 
+    font-size: 30px;
+}
+
+/* three type colors: rgb, hex, hsl */

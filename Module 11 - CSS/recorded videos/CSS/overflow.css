@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: burlywood;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    text-align: justify;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

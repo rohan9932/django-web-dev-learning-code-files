@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.root {
+    /* need to make the parent div flex to take effect on the children */
+    display: flex;
+    gap: 20px;
+    /* justify content only works on main axis */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.child-1 {
+    width: 300px;
+    height: 200px;
+    background-color: tomato;
+}
+
+.child-2 {
+    width: 300px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+.child-3 {
+    width: 300px;
+    height: 200px;
+    background-color: bisque;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-item {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: burlywood;
+}

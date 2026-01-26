@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: tomato;
+    --secondary-color: burlywood;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    clip-path: circle(50%);
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

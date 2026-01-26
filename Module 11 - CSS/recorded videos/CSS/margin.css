@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    font-family: sans-serif;
+    width: 200px;
+    height: 100px;
+    background-color: burlywood;
+    /* leaves equal amount of space from left and right */
+    /* margin can take negative values */
+    margin: auto;
+    padding: 20px;
+}

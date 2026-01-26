@@ -1,0 +1,88 @@
+/* body {
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+} */
+
+/* h1 {
+    color: red; */
+    /* if first one is not present it will try the fallback font(the next one) */
+    /* font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 40px; */
+    /* centers on on the area the block is holding */
+    /* text-align: center;
+    background-color: skyblue; */
+    /* visibility: hidden; */
+    /* display: none; */
+    /* width property only works on display value set on block */
+    /* display: inline-block;
+    width: 500px;
+} */
+
+/* standard design pattern -> first remove browser default margin */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#special {
+    color: green;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 5px;
+    text-align: center;
+    /* applied only over the content */
+    /* takes the content as width 1000px */
+    box-sizing: content-box;
+    /* but applied over the box if selected box-content */
+    /* takes whole box as width 1000px */
+    box-sizing: border-box;
+    height: 200px;
+    width: 1000px;
+}
+
+.blog-title {
+    color: royalblue;
+}
+
+
+div {
+    height: 200px;
+    width: 200px;
+}
+
+.a {
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.b {
+    background-color: skyblue;
+}
+
+.c {
+    background-color: burlywood;
+    height: 180px;
+    height: 180px;
+    /* position: static; */
+
+    /* it will float above all elements. will be fixed there */
+    /* position: fixed;
+    right: 10px;
+    bottom: 20px; */
+
+    /* used in navbar */
+    /* position: sticky; */
+    /* sticky works on it's parent item only. so if we wanna make a navbar we need to store 
+    directly in body. no leveling will work */
+
+    /* find it's parent who is relative pos. if can't find then it will be relative to body */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+

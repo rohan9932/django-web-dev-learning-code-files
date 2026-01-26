@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* controlling childs from here  */
+
+/* practical usage: Navbar creation  */
+
+.parent {
+    /* display: flex; */
+    height: 100vh;
+    /* default is row  */
+    /* flex-direction: column; */
+    /* works for main axis */
+    /* justify-content: center; */
+    /* works for cross axis  */
+    align-items: center;
+    gap: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+.a, .b, .c, .d {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.a {
+    background-color: tomato;
+}
+
+.b {
+    background-color: beige;
+}
+
+.c {
+    background-color: burlywood;
+}
+
+.d {
+    background-color: bisque;
+}
+
+button {
+    background-color: tomato;
+    padding: 8px 30px;
+    margin: 100px;
+    /* transition: background-color 0.3s, transform 0.3s; */
+}
+
+/* transition  */
+button:hover {
+    background-color: palegreen;
+    /* transform: scale(1.3) rotate(90deg); */
+    animation: spin 2s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
