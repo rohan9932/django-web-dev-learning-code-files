@@ -60,6 +60,14 @@ console.log(otherFruits);
 const {name:stName, ...otherInfo} = student;
 console.log(otherInfo);
 
+// ---------------- Rest vs Spread ---------------- //
+
+// | Operator   | Direction  | What it does                         |
+// | ---------- | ---------- | ------------------------------------ |
+// | **Rest**   | many → one | Collects values into an array/object |
+// | **Spread** | one → many | Expands array/object into values     |
+
+
 
 // ----------------- Promise ----------------------- //
 
